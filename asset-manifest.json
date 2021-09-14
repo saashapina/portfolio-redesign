@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/monster-rolodex/static/css/main.75e23738.chunk.css",
-    "main.js": "/monster-rolodex/static/js/main.ab458103.chunk.js",
-    "main.js.map": "/monster-rolodex/static/js/main.ab458103.chunk.js.map",
-    "runtime-main.js": "/monster-rolodex/static/js/runtime-main.43244d19.js",
-    "runtime-main.js.map": "/monster-rolodex/static/js/runtime-main.43244d19.js.map",
-    "static/js/2.d91dafac.chunk.js": "/monster-rolodex/static/js/2.d91dafac.chunk.js",
-    "static/js/2.d91dafac.chunk.js.map": "/monster-rolodex/static/js/2.d91dafac.chunk.js.map",
-    "index.html": "/monster-rolodex/index.html",
-    "static/css/main.75e23738.chunk.css.map": "/monster-rolodex/static/css/main.75e23738.chunk.css.map",
-    "static/js/2.d91dafac.chunk.js.LICENSE.txt": "/monster-rolodex/static/js/2.d91dafac.chunk.js.LICENSE.txt"
+    "main.css": "/portfolio-redesign/static/css/main.75e23738.chunk.css",
+    "main.js": "/portfolio-redesign/static/js/main.ab458103.chunk.js",
+    "main.js.map": "/portfolio-redesign/static/js/main.ab458103.chunk.js.map",
+    "runtime-main.js": "/portfolio-redesign/static/js/runtime-main.ee4923bf.js",
+    "runtime-main.js.map": "/portfolio-redesign/static/js/runtime-main.ee4923bf.js.map",
+    "static/js/2.d91dafac.chunk.js": "/portfolio-redesign/static/js/2.d91dafac.chunk.js",
+    "static/js/2.d91dafac.chunk.js.map": "/portfolio-redesign/static/js/2.d91dafac.chunk.js.map",
+    "index.html": "/portfolio-redesign/index.html",
+    "static/css/main.75e23738.chunk.css.map": "/portfolio-redesign/static/css/main.75e23738.chunk.css.map",
+    "static/js/2.d91dafac.chunk.js.LICENSE.txt": "/portfolio-redesign/static/js/2.d91dafac.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.43244d19.js",
+    "static/js/runtime-main.ee4923bf.js",
     "static/js/2.d91dafac.chunk.js",
     "static/css/main.75e23738.chunk.css",
     "static/js/main.ab458103.chunk.js"
