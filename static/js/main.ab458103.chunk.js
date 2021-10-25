@@ -1,2 +1,0 @@
-(this["webpackJsonpportfolio-redesign"]=this["webpackJsonpportfolio-redesign"]||[]).push([[0],{11:function(e,t,n){"use strict";n.r(t);var o=n(1),r=n.n(o),c=n(3),i=n.n(c),s=(n(8),n(9),n(0));var a=function(){return Object(s.jsx)("div",{className:"App",children:Object(s.jsx)("h1",{className:"header",children:"Portfolio"})})};i.a.render(Object(s.jsx)(r.a.StrictMode,{children:Object(s.jsx)(a,{})}),document.getElementById("root"))},8:function(e,t,n){},9:function(e,t,n){}},[[11,1,2]]]);
-//# sourceMappingURL=main.ab458103.chunk.js.map

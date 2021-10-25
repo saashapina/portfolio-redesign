@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio-redesign/static/css/main.75e23738.chunk.css",
-    "main.js": "/portfolio-redesign/static/js/main.ab458103.chunk.js",
-    "main.js.map": "/portfolio-redesign/static/js/main.ab458103.chunk.js.map",
+    "main.css": "/portfolio-redesign/static/css/main.4c241c3c.chunk.css",
+    "main.js": "/portfolio-redesign/static/js/main.71a7f71b.chunk.js",
+    "main.js.map": "/portfolio-redesign/static/js/main.71a7f71b.chunk.js.map",
     "runtime-main.js": "/portfolio-redesign/static/js/runtime-main.ee4923bf.js",
     "runtime-main.js.map": "/portfolio-redesign/static/js/runtime-main.ee4923bf.js.map",
-    "static/js/2.d91dafac.chunk.js": "/portfolio-redesign/static/js/2.d91dafac.chunk.js",
-    "static/js/2.d91dafac.chunk.js.map": "/portfolio-redesign/static/js/2.d91dafac.chunk.js.map",
+    "static/js/2.7d464520.chunk.js": "/portfolio-redesign/static/js/2.7d464520.chunk.js",
+    "static/js/2.7d464520.chunk.js.map": "/portfolio-redesign/static/js/2.7d464520.chunk.js.map",
     "index.html": "/portfolio-redesign/index.html",
-    "static/css/main.75e23738.chunk.css.map": "/portfolio-redesign/static/css/main.75e23738.chunk.css.map",
-    "static/js/2.d91dafac.chunk.js.LICENSE.txt": "/portfolio-redesign/static/js/2.d91dafac.chunk.js.LICENSE.txt"
+    "static/css/main.4c241c3c.chunk.css.map": "/portfolio-redesign/static/css/main.4c241c3c.chunk.css.map",
+    "static/js/2.7d464520.chunk.js.LICENSE.txt": "/portfolio-redesign/static/js/2.7d464520.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/portfolio-redesign/static/media/agustina-signature-webfont.571c263a.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.ee4923bf.js",
-    "static/js/2.d91dafac.chunk.js",
-    "static/css/main.75e23738.chunk.css",
-    "static/js/main.ab458103.chunk.js"
+    "static/js/2.7d464520.chunk.js",
+    "static/css/main.4c241c3c.chunk.css",
+    "static/js/main.71a7f71b.chunk.js"
   ]
 }
