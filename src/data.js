@@ -36,7 +36,7 @@ export const projects = [
       },
     ],
     description:
-      "Full website design created in Figma and developed in Webflow for a concept team collaboration platform app. This website utilizes Memberstack and Zapier to integrate membership authentication into the app. It uses Webflow's powerful CMS to create dynamic blog posts and pages.",
+      "Full website designed in Figma and developed in Webflow for a concept team collaboration platform app. This website utilizes Memberstack and Zapier to integrate membership authentication into the app. It uses Webflow's powerful CMS to create dynamic blog posts and pages.",
     image: Team,
   },
   {
