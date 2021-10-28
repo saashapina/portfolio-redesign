@@ -1,7 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+//Global
 .App {
   width: 80vw;
   margin: 5vh auto 10vh;
 }
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 32px;
+}
+
+.section {
+  margin: 15vh auto 0;
+}
+
+.section-header {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  color: #000;
+}
+
+//--Animations--
+.animatedFadeIn {
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 0;
+  animation-name: fadeInUp;
+}
+
+.fadeInDelay1 {
+  animation-duration: 1260ms;
+}
+
+.fadeInDelay2 {
+  animation-duration: 1600ms;
+}
+
+.fadeInDelay3 {
+  animation-duration: 1987ms;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+//-----------------------------------------------------------
 
 //Nav
 .header-nav {
@@ -20,75 +74,126 @@
 
     .nav-item {
       padding: 10px;
-      font-family: "Open Sans", sans-serif;
       font-size: 12px;
       opacity: 0.7;
     }
   }
 }
 
-.section {
-  margin: 10vh auto 0;
-}
-
 //Hero
 .sub-header {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 .header {
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 20px;
+  font-family: "Times New Roman", Times, serif;
   color: #000;
 }
 
 .header-description {
-  font-size: 20px;
   margin: 30px auto;
 }
 
 .header-button {
   padding: 12px;
-  font: 400 16px Montserrat, sans-serif;
+  font: 400 1rem "Open Sans", sans-serif;
   text-transform: uppercase;
   background-color: #000;
   color: white;
   border: none;
 }
 
-.animatedFadeIn {
-  animation-fill-mode: both;
-  animation-duration: 1000ms;
-  animation-delay: 0ms;
-  animation-iteration-count: 1;
-  opacity: 0;
-  animation-name: fadeInUp;
-}
+//Work
+.project {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  text-align: left;
 
-.fadeInDelay1 {
-  animation-duration: 1260ms;
-}
-
-.fadeInDelay2 {
-  animation-duration: 1587ms;
-}
-
-@keyframes fadeInUp {
-  from {
-    transform: translate3d(0, 40px, 0);
+  .project-category {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    line-height: 150%;
+    font-weight: 700;
+    font-size: 10px;
+    color: #b7b4b9;
   }
 
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
+  .project-title {
+    margin: 0 auto 15px;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 480px;
+  }
+
+  .project-tag {
+    margin-right: 16px;
+    margin-bottom: 16px;
+    padding: 6px 10px;
+    background-color: #e7f6f9;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 700;
+  }
+
+  .project-description {
+    max-width: 480px;
+  }
+
+  .project-links {
+    svg {
+      height: 30px;
+      width: 30px;
+      margin-right: 15px;
+    }
+  }
+
+  .project-image-link {
+    display: block;
+    margin-left: 50px;
+    width: 45%;
+  }
+
+  img {
+    width: 100%;
   }
 }
 
 //**Tablet**
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+  .section {
+    margin: 8vh auto 0;
+  }
+
+  .section-header {
+    font-size: 2rem;
+  }
+
   .header {
-    font-size: 55px;
+    font-size: 3rem;
+  }
+
+  .project {
+    flex-direction: column;
+
+    .project-description {
+      max-width: 630px;
+    }
+
+    .project-details {
+      margin: 0 auto 15px;
+    }
+
+    .project-image-link {
+      width: auto;
+      margin-left: 0;
+    }
   }
 }
 
@@ -96,6 +201,19 @@
 @media (max-width: 720px) {
   .App {
     width: 85vw;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .section {
+    margin: 8vh auto 0;
+  }
+
+  .section-header {
+    font-size: 1.25rem;
   }
 
   //Nav
@@ -110,9 +228,6 @@
       }
     }
   }
-  .section {
-    margin: 8vh auto 0;
-  }
 
   //Header
   .sub-header {
@@ -120,16 +235,42 @@
   }
 
   .header {
-    font-size: 24px;
+    font-size: 1.75rem;
     line-height: 10px;
   }
 
   .header-description {
-    font-size: 16px;
     margin: 20px auto;
   }
 
   .header-button {
     font-size: 12px;
+    padding: 10px;
+  }
+
+  //Work
+
+  .project {
+    .project-category {
+      font-size: 9px;
+    }
+
+    .project-tag {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+
+    .project-details {
+      max-width: 480px;
+    }
+
+    .project-links {
+      svg {
+        height: 25px;
+        width: 25px;
+        margin-right: 10px;
+      }
+    }
   }
 }

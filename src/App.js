@@ -1,5 +1,7 @@
 import "./App.scss";
 import { projects, skills } from "./data";
+import { ReactComponent as GithubLogo } from "./assets/git.svg";
+import { ReactComponent as GotoLogo } from "./assets/goto.svg";
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
         </div>
       </header>
 
+      {/* Hero */}
       <div className="section">
         <h1 className="sub-header animatedFadeIn">Hi, I'm SaaSha 👋🏽</h1>
         <h2 className="header animatedFadeIn">Front End Developer</h2>
@@ -25,31 +28,64 @@ function App() {
         </button>
       </div>
 
+      {/* Work */}
       <div className="section">
-        <h2 className="section-header">Work</h2>
         <div className="projects">
           {projects.map((project) => (
-            <div className="project" key={project.title}>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
+            <div className="project">
+              <div className="project-details animatedFadeIn fadeInDelay2">
+                <div className="project-category">Latest work</div>
+                <h2 className="project-title section-header">
+                  {project.title}
+                </h2>
+                <div className="project-tags">
+                  {project.tags.map((tag) => (
+                    <div className="project-tag">{tag}</div>
+                  ))}
+                </div>
+                <p className="project-description">{project.description}</p>
+                <div className="project-links">
+                  {project.links.map((link) => {
+                    if (link.github) {
+                      return (
+                        <div>
+                          <a
+                            href={link.github}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <GithubLogo />
+                          </a>
+                          <a href={link.live} target="_blank" rel="noreferrer">
+                            <GotoLogo />
+                          </a>
+                        </div>
+                      );
+                    } else {
+                      return (
+                        <a href={link.live} target="_blank" rel="noreferrer">
+                          <GotoLogo />
+                        </a>
+                      );
+                    }
+                  })}
+                </div>
+              </div>
+              <a
+                className="project-image-link"
+                href={project.links[0].live}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="project-image animatedFadeIn fadeInDelay3"
+                  src={project.image}
+                  alt={project.title}
+                />
+              </a>
             </div>
           ))}
         </div>
-      </div>
-
-      <div className="section">
-        <h2 className="section-header">About Me</h2>
-        <p>
-          This is all about me Lorem Ipsum is simply dummy text of the printing
-          and typesetting industry. Lorem Ipsum has been the industry's standard
-          dummy text ever since the 1500s, when an unknown printer took a galley
-          of type and scrambled it to make a type specimen book. It has survived
-          not only five centuries, but also the leap into electronic
-          typesetting, remaining essentially unchanged. It was popularised in
-          the 1960s with the release of Letraset sheets containing Lorem Ipsum
-          passages, and more recently with desktop publishing software like
-          Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
       </div>
 
       <div className="section">
@@ -62,6 +98,17 @@ function App() {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="section">
+        <h2 className="section-header">About Me</h2>
+        {/* <img src={}/> */}
+        <p>
+          My name is SaaSha. I'm a full-stack web developer with a love for
+          design and building memorable user experiences. Outside of coding I
+          enjoy sitting ocean side, hiking to the summit, xtreme martial arts,
+          painting, and spending quality time with my family.
+        </p>
       </div>
 
       <div className="section">
