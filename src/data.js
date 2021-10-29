@@ -2,6 +2,24 @@ import Chat from "./assets/chat.png";
 import Dynasty from "./assets/dynasty.png";
 import Team from "./assets/team.png";
 import Btkd from "./assets/btkd.png";
+import AWS from "./assets/icons/aws.png";
+import CSS from "./assets/icons/css.png";
+import Figma from "./assets/icons/figma.png";
+import Firebase from "./assets/icons/firebase.png";
+import Gatsby from "./assets/icons/gatsby.png";
+import Git from "./assets/icons/git.png";
+import Graphql from "./assets/icons/graphql.png";
+import Html5 from "./assets/icons/html5.png";
+import Javascript from "./assets/icons/javascript.png";
+import Mongodb from "./assets/icons/mongodb.png";
+import Node from "./assets/icons/node.png";
+import Photoshop from "./assets/icons/photoshop.png";
+import React from "./assets/icons/react.png";
+import Redux from "./assets/icons/redux.png";
+import Sass from "./assets/icons/sass.png";
+import Stripe from "./assets/icons/stripe.png";
+import W3C from "./assets/icons/w3c.png";
+import Webflow from "./assets/icons/webflow.png";
 
 export const projects = [
   {
@@ -66,100 +84,77 @@ export const projects = [
   },
 ];
 
-export const skills = [
-  {
-    title: "skill 1",
-    icon: "icon.com/url",
-    description: "about skill here",
-  },
-  {
-    title: "skill 2",
-    icon: "icon.com/url",
-    description: "about skill here",
-  },
-  {
-    title: "skill 3",
-    icon: "icon.com/url",
-    description: "about skill here",
-  },
-  {
-    title: "skill 4",
-    icon: "icon.com/url",
-    description: "about skill here",
-  },
-];
-
 export const skillIcons = [
   {
     title: "React",
-    icon: "",
+    icon: React,
   },
   {
     title: "Redux",
-    icon: "",
+    icon: Redux,
   },
   {
     title: "JavaScript",
-    icon: "",
+    icon: Javascript,
   },
   {
     title: "HTML5",
-    icon: "",
+    icon: Html5,
   },
   {
     title: "CSS3",
-    icon: "",
+    icon: CSS,
   },
   {
     title: "Sass",
-    icon: "",
+    icon: Sass,
   },
   {
     title: "AWS",
-    icon: "",
+    icon: AWS,
   },
   {
     title: "Firebase",
-    icon: "",
+    icon: Firebase,
   },
   {
     title: "MongoDB",
-    icon: "",
+    icon: Mongodb,
   },
   {
     title: "NodeJS",
-    icon: "",
+    icon: Node,
   },
   {
     title: "Gatsby",
-    icon: "",
+    icon: Gatsby,
   },
   {
     title: "GraphQL",
-    icon: "",
+    icon: Graphql,
   },
   {
     title: "Git",
-    icon: "",
+    icon: Git,
   },
   {
     title: "Stripe",
-    icon: "",
+    icon: Stripe,
   },
   {
     title: "W3C - Web Accessibility",
-    icon: "",
+    icon: W3C,
   },
   {
     title: "Webflow",
-    icon: "",
+    icon: Webflow,
   },
   {
     title: "Figma",
-    icon: "",
+    icon: Figma,
   },
   {
     title: "Photoshop",
-    icon: "",
+    icon: Photoshop,
   },
 ];

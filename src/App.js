@@ -1,5 +1,7 @@
 import "./App.scss";
-import { projects, skills } from "./data";
+import { projects, skillIcons } from "./data";
+import ReactTooltip from "react-tooltip";
+import MyPhoto from "./assets/my-photo.png";
 import { ReactComponent as GithubLogo } from "./assets/git.svg";
 import { ReactComponent as GotoLogo } from "./assets/goto.svg";
 
@@ -88,27 +90,36 @@ function App() {
         </div>
       </div>
 
+      {/* Skills */}
       <div className="section">
         <h2 className="section-header">Skills</h2>
         <div className="skills">
-          {skills.map((skill) => (
-            <div className="skill" key={skill.title}>
-              {skill.title}
-              {skill.description}
+          <ReactTooltip place="bottom" effect="solid" />
+          {skillIcons.map((icon) => (
+            <div className="skill-icon" key={icon.title}>
+              <img data-tip={icon.title} src={icon.icon} alt={icon.title} />
             </div>
           ))}
         </div>
       </div>
 
       <div className="section">
-        <h2 className="section-header">About Me</h2>
-        {/* <img src={}/> */}
-        <p>
-          My name is SaaSha. I'm a full-stack web developer with a love for
-          design and building memorable user experiences. Outside of coding I
-          enjoy sitting ocean side, hiking to the summit, xtreme martial arts,
-          painting, and spending quality time with my family.
-        </p>
+        <h2 className="about section-header">About Me</h2>
+        <div className="about-me">
+          <img src={MyPhoto} alt="profile" />
+          <p className="about-me-text">
+            I'm a front-end web developer with a love for design and building
+            memorable user experiences. I create successful websites that are
+            fast, beautiful, easy to use, accessible and built with best
+            practices. I have done work in front-end/back-end web, React Native
+            mobile app creation, and wireframe design.
+            <br />
+            <br />
+            Outside of coding I enjoy sitting ocean side, hiking to the summit,
+            xtreme martial arts, painting, and going on adventures with my
+            daugther and husband.
+          </p>
+        </div>
       </div>
 
       <div className="section">
