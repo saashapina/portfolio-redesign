@@ -77,7 +77,7 @@ function App() {
         <div {...useSmoothScrollTo("#work")} className="section">
           <div className="projects">
             {projects.map((project) => (
-              <div className="project">
+              <div className="project" key={project.title}>
                 <div className="project-details animatedFadeIn fadeInDelay2">
                   <div className="project-category">Latest work</div>
                   <h2 className="project-title section-header">
