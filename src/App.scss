@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 //Global
-.App {
+.container {
   width: 80vw;
   margin: 5vh auto 10vh;
 }
@@ -72,6 +72,11 @@ p {
   .nav {
     display: flex;
 
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+
     .nav-item {
       padding: 10px;
       font-size: 12px;
@@ -104,6 +109,10 @@ p {
   background-color: #000;
   color: white;
   border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 //Work
@@ -161,7 +170,7 @@ p {
   }
 
   img {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -184,6 +193,17 @@ p {
     height: 50px;
     width: 60px;
   }
+
+  .skill-details {
+    margin-top: 30px;
+    text-align: left;
+
+    li {
+      list-style-type: none;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+  }
 }
 
 //About Me
@@ -192,19 +212,66 @@ p {
 }
 .about-me {
   display: flex;
-  flex-direction: column;
 
   img {
-    width: 20%;
-    height: 200px;
-
-    margin-right: 20px;
-    border-radius: 50%;
+    height: auto;
+    width: auto;
+    max-width: 250px;
+    max-height: 250px;
+    margin-right: 90px;
   }
 
   .about-me-text {
-    max-width: 500px;
+    max-width: 600px;
     text-align: left;
+    margin: 0;
+    line-height: 37px;
+  }
+}
+
+//Contact
+.contact {
+  background-color: #e7f6f9;
+  padding: 60px 0;
+
+  .contact-header {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: normal;
+  }
+}
+.footer {
+  position: absolute;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  background-color: black;
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+
+  .footer-copyright {
+    margin-left: 50px;
+    font-size: 12px;
+  }
+
+  .footer-links {
+    margin-right: 50px;
+    svg {
+      fill: gray;
+      height: 20px;
+      width: 20px;
+
+      path {
+        fill: gray;
+      }
+    }
+
+    a {
+      color: gray;
+      text-decoration: none;
+      margin: 0 10px 0 10px;
+    }
   }
 }
 
@@ -221,7 +288,7 @@ p {
   .header {
     font-size: 3rem;
   }
-
+  //Work
   .project {
     flex-direction: column;
 
@@ -238,11 +305,21 @@ p {
       margin-left: 0;
     }
   }
+
+  //about
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      margin: 0 auto 45px;
+    }
+  }
 }
 
 //**Phone**
 @media (max-width: 720px) {
-  .App {
+  .container {
     width: 85vw;
   }
 
@@ -292,7 +369,6 @@ p {
   }
 
   //Work
-
   .project {
     .project-category {
       font-size: 9px;
@@ -322,6 +398,34 @@ p {
     img {
       height: 30px;
       width: 30px;
+    }
+  }
+
+  //about
+  .about-me {
+    img {
+      margin-bottom: 10px;
+    }
+  }
+
+  //contact
+  .contact {
+    padding: 35px 0;
+  }
+
+  .footer {
+    padding: 15px 0 15px 0;
+    .footer-copyright {
+      margin-left: 10px;
+      font-size: 10px;
+    }
+
+    .footer-links {
+      margin-right: 10px;
+      svg {
+        height: 12px;
+        width: 12px;
+      }
     }
   }
 }

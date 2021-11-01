@@ -102,12 +102,12 @@ export const skillIcons = [
     icon: Html5,
   },
   {
-    title: "CSS3",
-    icon: CSS,
-  },
-  {
     title: "Sass",
     icon: Sass,
+  },
+  {
+    title: "CSS3",
+    icon: CSS,
   },
   {
     title: "AWS",
