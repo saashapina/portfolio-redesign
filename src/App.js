@@ -177,7 +177,7 @@ function App() {
               <br />
               Outside of coding I enjoy sitting ocean side, hiking to the
               summit, xtreme martial arts, painting, and going on adventures
-              with my daugther, husband, and my big pup King.
+              with my daughter, husband, and my big pup King.
             </p>
           </div>
         </div>
@@ -197,7 +197,7 @@ function App() {
       </div>
       <div className="footer">
         <div className="footer-copyright">
-          Crafted With 🤍 © 2021 SaaSha Pina
+          Crafted With 🤍 © {(new Date().getFullYear())} SaaSha Pina
         </div>
         <div className="footer-links">
           <a

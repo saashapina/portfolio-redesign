@@ -20,33 +20,12 @@ import Sass from "./assets/icons/sass.png";
 import Stripe from "./assets/icons/stripe.png";
 import W3C from "./assets/icons/w3c.png";
 import Webflow from "./assets/icons/webflow.png";
+import TypeScript from "./assets/icons/ts.png";
 
 export const projects = [
+
   {
-    title: "Dynasty Clothing",
-    tags: [
-      "React",
-      "Redux",
-      "Redux-Saga",
-      "Javascript",
-      "Sass",
-      "CSS",
-      "Firebase",
-      "Heroku",
-      "Stripe",
-    ],
-    links: [
-      {
-        live: "https://dynasty-clothing.herokuapp.com/",
-        github: "https://github.com/saashapina/dynasty-clothing",
-      },
-    ],
-    description:
-      "Full website build for a concept e-commerce online clothing store. The website is built with React, Redux & JavaScript on the front-end and uses Firebase for authentication and a cloud database. Stripe integration is used to handle user payments.",
-    image: Dynasty,
-  },
-  {
-    title: "Team App",
+    title: "Team Collab",
     tags: ["Webflow", "Memberstack", "Zapier", "Figma", "Photoshop"],
     links: [
       {
@@ -68,6 +47,28 @@ export const projects = [
     description:
       "This is a homepage designed in Figma and built in Webflow as a concept project for a chat application. The page was built into responsive web application using Webflow.",
     image: Chat,
+  },
+  {
+    title: "Dynasty Clothing",
+    tags: [
+      "React",
+      "Redux",
+      "Redux-Saga",
+      "Javascript",
+      "Sass",
+      "CSS",
+      "Firebase",
+      "Heroku",
+      "Stripe",
+    ],
+    links: [
+      {
+        github: "https://github.com/saashapina/dynasty-clothing",
+      },
+    ],
+    description:
+      "Full website build for a concept e-commerce online clothing store. The website is built with React, Redux & JavaScript on the front-end and uses Firebase for authentication and a cloud database. Stripe integration is used to handle user payments.",
+    image: Dynasty,
   },
   {
     title: "Boston Tae Kwon Do",
@@ -136,6 +137,10 @@ export const skillIcons = [
   {
     title: "Git",
     icon: Git,
+  },
+  {
+    title: "TypeScript",
+    icon: TypeScript,
   },
   {
     title: "Stripe",
