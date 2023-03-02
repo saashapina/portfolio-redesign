@@ -91,7 +91,7 @@ function App() {
                   <p className="project-description">{project.description}</p>
                   <div className="project-links">
                     {project.links.map((link) => {
-                      if (link.github) {
+                      if (link.github && link.live) {
                         return (
                           <div>
                             <a
@@ -109,6 +109,12 @@ function App() {
                               <GotoLogo />
                             </a>
                           </div>
+                        );
+                      } if (link.github) {
+                        return (
+                          <a href={link.github} target="_blank" rel="noreferrer">
+                            <GithubLogo />
+                          </a>
                         );
                       } else {
                         return (
