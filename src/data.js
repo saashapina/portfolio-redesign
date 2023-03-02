@@ -63,6 +63,7 @@ export const projects = [
     ],
     links: [
       {
+        live: "https://dynasty-clothing.herokuapp.com/shop",
         github: "https://github.com/saashapina/dynasty-clothing",
       },
     ],
