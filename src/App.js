@@ -44,7 +44,7 @@ function App() {
               <div className="nav-item">About</div>
             </a>
             <a
-              href="https://drive.google.com/file/d/1GPa4ZAU6FVH1RTZ4b-Ti_ZTr55SnsT_B/view?usp=sharing"
+              href="https://drive.google.com/file/d/17Udp8Z4hGCDcnX_z_mfLRTCilQbj4iA2/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
