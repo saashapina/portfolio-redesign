@@ -1,4 +1,5 @@
 import Chat from "./assets/chat.png";
+import Cake from "./assets/Cake.png";
 import Dynasty from "./assets/dynasty.png";
 import Team from "./assets/team.png";
 import Btkd from "./assets/btkd.png";
@@ -25,7 +26,19 @@ import TypeScript from "./assets/icons/ts.png";
 export const projects = [
 
   {
-    title: "Team Collab",
+    title: "Sweet Cakes",
+    tags: ["Webflow", "Animations", "Figma", "Photoshop"],
+    links: [
+      {
+        live: "sweet-cakes-concept.webflow.io/",
+      },
+    ],
+    description:
+      "A concept cake shop website using Figma and Webflow. This website demonstrates my skills in UI/UX design and web development. It features seamless animations and engaging interactive elements, allowing visitors to browse and order cakes easily. The project showcases my ability to merge design and development for visually appealing and engaging websites.",
+    image: Cake,
+  },
+  {
+    title: "Team",
     tags: ["Webflow", "Memberstack", "Zapier", "Figma", "Photoshop"],
     links: [
       {
@@ -37,7 +50,7 @@ export const projects = [
     image: Team,
   },
   {
-    title: "Chat App",
+    title: "The Chat",
     tags: ["Webflow", "Figma", "Photoshop"],
     links: [
       {
