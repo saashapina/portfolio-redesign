@@ -27,7 +27,7 @@ export const projects = [
 
   {
     title: "Sweet Cakes",
-    tags: ["Webflow", "Animations", "Figma", "Photoshop"],
+    tags: ["Webflow", "E-commerce", "Animations", "Figma", "Photoshop"],
     links: [
       {
         live: "sweet-cakes-concept.webflow.io/",
@@ -65,6 +65,7 @@ export const projects = [
     title: "Dynasty Clothing",
     tags: [
       "React",
+      "E-commerce",
       "Redux",
       "Redux-Saga",
       "Javascript",
