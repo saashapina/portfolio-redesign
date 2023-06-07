@@ -55,7 +55,7 @@ function App() {
 
         {/* Hero */}
         <div className="section">
-          <h1 className="sub-header animatedFadeIn">Hi, I'm SaaSha 👋🏽</h1>
+          <h1 className="sub-header animatedFadeIn">Hi, I'm SaaSha <span className="wave">👋🏽</span></h1>
           <div>
             <h2 className="header animatedFadeIn">Front End Developer</h2>
           </div>
