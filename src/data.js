@@ -34,7 +34,7 @@ export const projects = [
       },
     ],
     description:
-      "A concept cake shop website using Figma and Webflow. This website demonstrates my skills in UI/UX design and web development. It features seamless animations and engaging interactive elements, allowing visitors to browse and order cakes easily. The project showcases my ability to merge design and development for visually appealing and engaging websites.",
+      "A concept cake shop website using Figma and Webflow. Utilizing skills in UI/UX design and web development. It features seamless animations and engaging interactive elements, allowing visitors to browse and order cakes easily. The project showcases my ability to merge design and development for visually appealing and engaging websites.",
     image: Cake,
   },
   {
