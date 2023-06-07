@@ -30,7 +30,7 @@ export const projects = [
     tags: ["Webflow", "E-commerce", "Animations", "Figma", "Photoshop"],
     links: [
       {
-        live: "sweet-cakes-concept.webflow.io/",
+        live: "https://sweet-cakes-concept.webflow.io/",
       },
     ],
     description:

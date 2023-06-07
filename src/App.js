@@ -56,13 +56,18 @@ function App() {
         {/* Hero */}
         <div className="section">
           <h1 className="sub-header animatedFadeIn">Hi, I'm SaaSha 👋🏽</h1>
-          <h2 className="header animatedFadeIn">Front End Developer</h2>
-          <h2 className="header animatedFadeIn fadeInDelay1">& Designer</h2>
+          <div>
+            <h2 className="header animatedFadeIn">Front End Developer</h2>
+          </div>
+          <mark>
+            <h2 className="header animatedFadeIn fadeInDelay1">& Designer</h2>
+            <svg className="highlighter-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 60" preserveAspectRatio="none" stroke="#e7f6f9"><path d="m 3.518915,27.827324 c 55.429038,4.081 111.581115,5.822 167.117815,2.867 22.70911,-1.208 45.39827,-0.601 68.126,-0.778 28.38172,-0.223 56.76078,-1.024 85.13721,-1.33 24.17378,-0.261 48.4273,0.571 72.58114,0.571"/></svg><svg className="highlighter-svg"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 60" preserveAspectRatio="none" stroke="#e7f6f9"><path d="m 3.518915,27.827324 c 55.429038,4.081 111.581115,5.822 167.117815,2.867 22.70911,-1.208 45.39827,-0.601 68.126,-0.778 28.38172,-0.223 56.76078,-1.024 85.13721,-1.33 24.17378,-0.261 48.4273,0.571 72.58114,0.571"/></svg>
+          </mark>
           <p className="header-description animatedFadeIn fadeInDelay2">
             Building digital products, brands, and experiences.
           </p>
           <button
-            className="header-button animatedFadeIn"
+            className="header-button animatedFadeIn hvr-sweep-to-right"
             onClick={(e) => {
               window.location = "mailto:saasha.pina@gmail.com";
               e.preventDefault();
@@ -127,7 +132,7 @@ function App() {
                   </div>
                 </div>
                 <a
-                  className="project-image-link"
+                  className="project-image-link hvr-bob"
                   href={project.links[0].live}
                   target="_blank"
                   rel="noreferrer"
@@ -149,7 +154,7 @@ function App() {
           <div className="skills">
             <ReactTooltip place="bottom" effect="solid" />
             {skillIcons.map((icon) => (
-              <div className="skill-icon" key={icon.title}>
+              <div className="skill-icon hvr-grow-rotate" key={icon.title}>
                 <img data-tip={icon.title} src={icon.icon} alt={icon.title} />
               </div>
             ))}
@@ -191,7 +196,7 @@ function App() {
       <div className="section contact">
         <h2 className="contact-header header">Get In Touch</h2>
         <button
-          className="header-button"
+          className="header-button hvr-sweep-to-right"
           onClick={(e) => {
             window.location = "mailto:saasha.pina@gmail.com";
             e.preventDefault();
