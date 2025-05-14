@@ -24,9 +24,21 @@ import Webflow from "./assets/icons/webflow.png";
 import TypeScript from "./assets/icons/ts.png";
 
 export const projects = [
-
   {
-    title: "Sweet Cakes",
+    title: "Boston Tae Kwon Do",
+    tags: ["React", "GatsbyJS", "JavaScript", "Sass", "CSS"],
+    links: [
+      {
+        live: "http://www.bostontaekwondoacademy.net/",
+        github: "https://github.com/saashapina/btkd",
+      },
+    ],
+    description:
+      "Local martial arts school website built with React and the fastest static-site generation framework: GatsbyJS. Designed and fully responsive site on all devices.",
+    image: Btkd,
+  },
+  {
+    title: "Sweet Cakes - Concept",
     tags: ["Webflow", "E-commerce", "Animations", "Figma", "Photoshop"],
     links: [
       {
@@ -38,7 +50,7 @@ export const projects = [
     image: Cake,
   },
   {
-    title: "Team",
+    title: "Team - Concept",
     tags: ["Webflow", "Memberstack", "Zapier", "Figma", "Photoshop"],
     links: [
       {
@@ -50,7 +62,7 @@ export const projects = [
     image: Team,
   },
   {
-    title: "The Chat",
+    title: "The Chat - Concept",
     tags: ["Webflow", "Figma", "Photoshop"],
     links: [
       {
@@ -84,19 +96,6 @@ export const projects = [
     description:
       "Full website build for a concept e-commerce online clothing store. The website is built with React, Redux & JavaScript on the front-end and uses Firebase for authentication and a cloud database. Stripe integration is used to handle user payments.",
     image: Dynasty,
-  },
-  {
-    title: "Boston Tae Kwon Do",
-    tags: ["React", "GatsbyJS", "JavaScript", "Sass", "CSS"],
-    links: [
-      {
-        live: "http://www.bostontaekwondoacademy.net/",
-        github: "https://github.com/saashapina/btkd",
-      },
-    ],
-    description:
-      "Local martial arts school website built with React and the fastest static-site generation framework: GatsbyJS. Designed and fully responsive site on all devices.",
-    image: Btkd,
   },
 ];
 

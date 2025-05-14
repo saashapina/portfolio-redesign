@@ -1,7 +1,7 @@
 import "./App.scss";
 import { React, useRef, useEffect } from "react";
 import { projects, skillIcons } from "./data";
-import ReactTooltip from "react-tooltip";
+import { Tooltip } from "react-tooltip";
 import MyPhoto from "./assets/my-photo.png";
 import { ReactComponent as GithubLogo } from "./assets/git.svg";
 import { ReactComponent as GotoLogo } from "./assets/goto.svg";
@@ -44,7 +44,7 @@ function App() {
               <div className="nav-item">About</div>
             </a>
             <a
-              href="https://drive.google.com/file/d/17Udp8Z4hGCDcnX_z_mfLRTCilQbj4iA2/view?usp=sharing"
+              href="https://drive.google.com/file/d/1kSexBf-vN1UJsVtmYjnLyzJAyKeUGr8_/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
@@ -55,13 +55,32 @@ function App() {
 
         {/* Hero */}
         <div className="section">
-          <h1 className="sub-header animatedFadeIn">Hi, I'm SaaSha <span className="wave">👋🏽</span></h1>
+          <h1 className="sub-header animatedFadeIn">
+            Hi, I'm SaaSha <span className="wave">👋🏽</span>
+          </h1>
           <div>
             <h2 className="header animatedFadeIn">Front End Developer</h2>
           </div>
           <mark>
             <h2 className="header animatedFadeIn fadeInDelay1">& Designer</h2>
-            <svg className="highlighter-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 60" preserveAspectRatio="none" stroke="#e7f6f9"><path d="m 3.518915,27.827324 c 55.429038,4.081 111.581115,5.822 167.117815,2.867 22.70911,-1.208 45.39827,-0.601 68.126,-0.778 28.38172,-0.223 56.76078,-1.024 85.13721,-1.33 24.17378,-0.261 48.4273,0.571 72.58114,0.571"/></svg><svg className="highlighter-svg"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 60" preserveAspectRatio="none" stroke="#e7f6f9"><path d="m 3.518915,27.827324 c 55.429038,4.081 111.581115,5.822 167.117815,2.867 22.70911,-1.208 45.39827,-0.601 68.126,-0.778 28.38172,-0.223 56.76078,-1.024 85.13721,-1.33 24.17378,-0.261 48.4273,0.571 72.58114,0.571"/></svg>
+            <svg
+              className="highlighter-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 400 60"
+              preserveAspectRatio="none"
+              stroke="#e7f6f9"
+            >
+              <path d="m 3.518915,27.827324 c 55.429038,4.081 111.581115,5.822 167.117815,2.867 22.70911,-1.208 45.39827,-0.601 68.126,-0.778 28.38172,-0.223 56.76078,-1.024 85.13721,-1.33 24.17378,-0.261 48.4273,0.571 72.58114,0.571" />
+            </svg>
+            <svg
+              className="highlighter-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 400 60"
+              preserveAspectRatio="none"
+              stroke="#e7f6f9"
+            >
+              <path d="m 3.518915,27.827324 c 55.429038,4.081 111.581115,5.822 167.117815,2.867 22.70911,-1.208 45.39827,-0.601 68.126,-0.778 28.38172,-0.223 56.76078,-1.024 85.13721,-1.33 24.17378,-0.261 48.4273,0.571 72.58114,0.571" />
+            </svg>
           </mark>
           <p className="header-description animatedFadeIn fadeInDelay2">
             Building digital products, brands, and experiences.
@@ -76,6 +95,69 @@ function App() {
           >
             Connect with me
           </button>
+        </div>
+
+        {/* Experience */}
+        <div className="section">
+          <h2 className="section-header">Recent Experience</h2>
+          <div className="experience">
+            <div className="experience-item animatedFadeIn">
+              <div className="experience-header">
+                <h3 className="experience-title">
+                  Front End Developer Consultant
+                </h3>
+                <div className="experience-company">
+                  Sparkbox Agency (Forge LLC)
+                </div>
+                <div className="experience-duration">Jan 2022 - Present</div>
+              </div>
+              <ul className="experience-details">
+                <li>
+                  <strong>Adobe - Design System Integration</strong> - Lead the
+                  Adobe Spectrum Design System integration and implmentation on
+                  Adobe.com
+                </li>
+                <li>
+                  <strong>GAP - Product Page Performance & Redesign</strong> -
+                  Redesigned and improved performance of GAP product page across
+                  all GAP brands using React and Redux. Led tech talks and
+                  demonstrations
+                </li>
+                <li>
+                  <strong>Goodyear Tires</strong> - Developed React Native
+                  mobile app for tire maintenance detection
+                </li>
+                <li>
+                  <strong>Goodyear Corporate</strong> - Built and redesigned
+                  corporate website using AEM CMS
+                </li>
+                <li>
+                  <strong>University of Georgia</strong> - Rebuilt website in
+                  WordPress, mentored apprentice developers
+                </li>
+              </ul>
+            </div>
+
+            <div className="experience-item animatedFadeIn fadeInDelay1">
+              <div className="experience-header">
+                <h3 className="experience-title">React Front End Developer</h3>
+                <div className="experience-company">
+                  Aura (Aura LLC formerly iSubscribed)
+                </div>
+                <div className="experience-duration">Oct 2018 - Oct 2020</div>
+              </div>
+              <ul className="experience-details">
+                <li>
+                  Developed 900+ Zeplin design mockups & redesigned three brand
+                  websites: Identity Guard, Intrusta, & Identity Defense
+                </li>
+                <li>
+                  Managed data and solved complex problems using Redux &
+                  Contentful
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         {/* Work */}
@@ -115,9 +197,14 @@ function App() {
                             </a>
                           </div>
                         );
-                      } if (link.github) {
+                      }
+                      if (link.github) {
                         return (
-                          <a href={link.github} target="_blank" rel="noreferrer">
+                          <a
+                            href={link.github}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
                             <GithubLogo />
                           </a>
                         );
@@ -152,7 +239,7 @@ function App() {
         <div className="section">
           <h2 className="section-header">Skills</h2>
           <div className="skills">
-            <ReactTooltip place="bottom" effect="solid" />
+            <Tooltip place="bottom" effect="solid" />
             {skillIcons.map((icon) => (
               <div className="skill-icon hvr-grow-rotate" key={icon.title}>
                 <img data-tip={icon.title} src={icon.icon} alt={icon.title} />
@@ -180,15 +267,16 @@ function App() {
             <img src={MyPhoto} alt="profile" />
             <p className="about-me-text">
               I'm a front-end web developer with a love for design and building
-              memorable user experiences. I create successful websites that are
-              fast, beautiful, easy to use, accessible and built with best
-              practices. I have done work in front-end/back-end web, Webflow,
-              React Native mobile app creation, and Figma mockup design.
+              memorable user experiences. I create websites that are fast,
+              beautiful, easy to use, ADA compliant, accessible and built with
+              best practices. I have done work in front-end/back-end web,
+              Webflow, React Native mobile app creation, and Figma mockup
+              design.
               <br />
               <br />
               Outside of coding I enjoy sitting ocean side, hiking to the
               summit, xtreme martial arts, painting, and going on adventures
-              with my daughter, husband, and my big pup King.
+              with my daughters, husband, and my big pup King.
             </p>
           </div>
         </div>
@@ -208,7 +296,7 @@ function App() {
       </div>
       <div className="footer">
         <div className="footer-copyright">
-          Crafted With 🤍 © {(new Date().getFullYear())} SaaSha Pina
+          Crafted With 🤍 © {new Date().getFullYear()} SaaSha Pina
         </div>
         <div className="footer-links">
           <a
